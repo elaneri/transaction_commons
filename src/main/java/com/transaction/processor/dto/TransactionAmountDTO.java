@@ -7,19 +7,19 @@ public class TransactionAmountDTO implements Serializable {
 	private static final long serialVersionUID = -8092210529170598456L;
 	private BigDecimal total;
 	private String currency;
-	private TransactionTotalDetailDTO detail;
-
-	public TransactionTotalDetailDTO getDetail() {
-		return detail;
-	}
-
-	public void setDetail(TransactionTotalDetailDTO detail) {
-		this.detail = detail;
-	}
+	private TransactionTotalDetailDTO details;
 
 	@Override
 	public String toString() {
-		return "TransactionAmountDTO [total=" + total + ", currency=" + currency + ", detail=" + detail + "]";
+		return "TransactionAmountDTO [total=" + total + ", currency=" + currency + ", details=" + details + "]";
+	}
+
+	public TransactionTotalDetailDTO getDetails() {
+		return details;
+	}
+
+	public void setDetails(TransactionTotalDetailDTO details) {
+		this.details = details;
 	}
 
 	public BigDecimal getTotal() {

@@ -7,26 +7,18 @@ public class TransactionDTO implements Serializable {
 
 	private static final long serialVersionUID = -6396650976640850824L;
 	
-	private String batchTransactionId;
 
 	
-	private List<TransactionDetailDTO> transactionDetail;
+	private List<TransactionDetailDTO> transactions;
 
-	public List<TransactionDetailDTO> getTransactionDetail() {
-		return transactionDetail;
+	public List<TransactionDetailDTO> getTransactions() {
+		return transactions;
 	}
 
-	public void setTransactionDetail(List<TransactionDetailDTO> transactionDetail) {
-		this.transactionDetail = transactionDetail;
+	public void setTransactions(List<TransactionDetailDTO> transactions) {
+		this.transactions = transactions;
 	}
 	
 
-	public String getBatchTransactionId() {
-		return batchTransactionId;
-	}
-
-	public void setBatchTransactionId(String batchTransactionId) {
-		this.batchTransactionId = batchTransactionId;
-	}
 
 }
